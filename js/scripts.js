@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: '28 Lipca 1943 17 a, 30-227 Kraków, Poland',
 
             // Event Description
-            description: "Feel free to reach out to us in case you have face any challenges :)"
+            description: "Feel free to reach out to us (absi.alinka@gmail.com) in case you have face need any help or face other challenges around logistics :)"
         }
     });
 
@@ -216,7 +216,9 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
         if (MD5($('#invite_code').val()) !== '1b4b16ae294b41580302d0090a902233'
-            || MD5($('#invite_code').val()) !== '1b4b16ae294b41580302d0090a902233') {
+            || 
+            MD5($('#invite_code').val()) !== '1b4b16ae294b41580302d0090a902233') 
+            {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyYbKvXmV1KSqEIWw3Tj9swjdj_MObNNX618qH9cshuSrZhQnLidM22/exec', data)
