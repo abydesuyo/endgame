@@ -162,7 +162,8 @@ $(document).ready(function () {
     }
 
     /********************** Embed youtube video *********************/
-    $('.player').YTPlayer();
+    // $('.player').YTPlayer();
+    //Remove this from init and move it to main page so that we can initialize this after deciding if we are going to English or Polish
 
 
     /********************** Toggle Map Content **********************/

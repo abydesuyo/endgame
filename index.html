@@ -48,13 +48,10 @@
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div class="wp1">
                     <button onclick="
+                        $('#bgndVideo').load(location.href+' #bgndVideo>*','');
                         document.getElementById('english').style.display = 'block';
                         document.getElementById('language').style.display = 'none';
-                        $('#video-bg').load(' #video-bg > *');
-                        // document.getElementById('video-bg').style.width = window.innerWidth(); 
-                        // document.getElementById('wrapper_bgndVideo').style.display = 'block';
-                        // document.getElementById('wrapper_bgndVideo').style.minWidth = window.innerWidth;
-                        // alert(window.innerWidth);
+                        $('.player').YTPlayer();
                         " 
                     class="btn-white btn-small">ENGLISH</button>
                 </div>
@@ -64,8 +61,11 @@
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp2">
                     <button onclick="
+                        $('#bgndVideo').load(location.href+' #bgndVideo>*','');
                         document.getElementById('polish').style.display = 'block';
-                        document.getElementById('language').style.display = 'none';" 
+                        document.getElementById('language').style.display = 'none';
+                        $('.player').YTPlayer();
+                        " 
                     class="btn-white btn-small">POLSKI</button>
                 </div>
             </div>
@@ -74,626 +74,625 @@
     </div>
 </div>
 <div id="english" style="display:none; width: 100%;">
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <!-- <li><a href="#instagram">Instagram</a></li> -->
-                            <li><a href="#eng-pics">Our Story</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul>
-                    </nav>
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#intro">How we met</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <!-- <li><a href="#instagram">Instagram</a></li> -->
+                                <li><a href="#eng-pics">Our Story</a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="#map" class="login">Venue</a></li>
+                                <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
                 </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <!--<h1>Ram and Antara</h1>-->
+                        <!-- <img src="img/logo-lg.png"> -->
+                        <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
+                        <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                    </div>
                 </div>
             </div>
-        </header>
+            <!-- <div class="row">
+                <div class="col-sm-4 hidden-xs"></div>
+                <div class="col-sm-4 hidden-xs text-center">
+                    <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+                <div class="col-sm-4 hidden-xs"></div>
+            </div> -->
+        </div>
+        <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
-                    <!-- <img src="img/logo-lg.png"> -->
-                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+
+    <section id="invitation" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Save the Dates</h3>
+                    <p>It is the 21<sup>st</sup> of August '21 and we would like you to be a part of
+                        our joyful moment.</p>
+                    <div class="share-bar"></div>
                 </div>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center">
-                <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div> -->
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
+    </section>
 
-<section id="invitation" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Save the Dates</h3>
-                <p>It is the 21<sup>st</sup> of August '21 and we would like you to be a part of
-                    our joyful moment.</p>
-                <div class="share-bar"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>
-                    On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o)
-                    The movie went about in detail about horrible ways in which soldiers could get killed. 
-                    And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing
-                    that ever happened to me that year ;o)
-                    That very moment, somehow we knew we were bound together.
-                    The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some.
-                    We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) 
-                    There were a lot more tests that followed along with all the happiness, but in the end the happiness
-                    prevailed ;o) 
-                    And once we covered the final frontier of Polish and Indian home trips, we knew we could survive.
-                    And better yet, we started bringing out the best in each other. 
-                    And so here we are :)   
-                </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
-        </div>
-    </div>
-</section>
-
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Events</h3>
-                <p><strong>21st August</strong></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
-                    <p>Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored</p>
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">How we met</h3>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <!-- <p><strong>21st August</strong></p> -->
-                    <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
-                    <p>Dance to your favourite tunes while having Polish food and Vodka?</p>
-                </div>                
-                <!-- <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
+                <div class="col-md-6">
+                    <p>
+                        On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o)
+                        The movie went about in detail about horrible ways in which soldiers could get killed. 
+                        And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing
+                        that ever happened to me that year ;o)
+                        That very moment, somehow we knew we were bound together.
+                        The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some.
+                        We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) 
+                        There were a lot more tests that followed along with all the happiness, but in the end the happiness
+                        prevailed ;o) 
+                        And once we covered the final frontier of Polish and Indian home trips, we knew we could survive.
+                        And better yet, we started bringing out the best in each other. 
+                        And so here we are :)   
+                    </p>
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Events</h3>
+                    <p><strong>21st August</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+                        <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
+                        <p>Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+                        <!-- <p><strong>21st August</strong></p> -->
+                        <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
+                        <p>Dance to your favourite tunes while having Polish food and Vodka?</p>
+                    </div>                
+                    <!-- <div class="wp6">
+                        <h5>Wedding <span class="time">6PM-12AM</span></h5>
+                        <p>This is the main event in the entire wedding when the bride and the groom tie the
+                            knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
+                            as maximum number of guests would be attending this event. This is when the couple circle the
+                            sacred fire and are finally declared husband and wife.</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row section-padding">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                    </a>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-xs-12 section-border section-padding">
+                </div>
+            </div>-->
+        </div>
+
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <h3 class="text-center section-padding">Dress Code</h3>
+                        <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
+                        <p>
+                            <strong>Formal Western Wear</strong>
+                            <br>
+                            Please avoid wearing white (bride color) or black (funeral color).
+                            Ladies can wear what makes you feel fabulous but yet comfortable.
+                            <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Here are some samples</a>
+                            Gentlemen can adorn thier
+                            <a href="https://pl.pinterest.com/aliklimk/mens-attire/"> Summer Suits</a> 
+                            If it is a sweltering summer, a spare shirt to change into would be handy.
+                        </p>
+                        <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
+                        <p>
+                            <strong>Comfortable Western Attire</strong>
+                            <br>
+                            You can optionally change into semi-formal look that is contemporary & fashionable 
+                            as long as you dont steal the thunder of the night ;)
+                            Keep in mind that there will be plenty of delicious food, so plan some space for it. 
+                            Dancing is on the agenda, so comfortable shoes will be a great. 
+                            Polish women will often bring flats and change them in the middle of the part
+                            You can see some pins for
+                            <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Ladies</a>
+                            & <a href="https://pl.pinterest.com/aliklimk/mens-attire/">Gents</a>.
+                        </p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </section>
+
+    <!-- <section id="instagram" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>A picture is worth a thousand words!</h3>
+                    <p>Help us capture the moment, tag your photos with the hashtag
+                        <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row section-border wp7">
+                <div class="col-md-4 col-md-offset-4">
+                    <img src="img/iphone_instagram.jpg">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="eng-pics" class="section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">OUR STORY</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-10.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-10.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-9a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-9.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-8a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-8.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-7a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-7.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-6a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-6.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-5a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-5.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-4a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-4.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-3a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-3.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-2a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-2.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/-1a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/-1.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/0a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/0.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/1a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/1.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/2a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/2.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/3a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/3.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/4a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/4.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/5a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/5.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/6a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/6.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/7a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/7.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>            
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/8a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/8.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>    
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/9a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/9.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/10a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/10.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/11a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/11.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>            
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/12.ajpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/12.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/13a.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/13.jpg" alt=""/>
+                        </div>
+                    </a>
+                </div>                                           
+                <!-- <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/6.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/6.jpg" alt=""/>
+                        </div>
+                    </a>
                 </div> -->
             </div>
         </div>
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-                </a>
+        <div class="container">
+            <div class="row hidden-lg hidden-md hidden-xs">
+                <div class="col-xs-12 section-border section-padding"></div>
             </div>
         </div>
         <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
+            <div class="col-md-12">
+                <div class="diamond floating-logo">
+                    <img src="img/sketch-logo.png" alt="Sketch Logo">
+                    <div class="ring"></div>
+                </div>
             </div>
         </div>-->
-    </div>
+    </section>
 
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Dress Code</h3>
-                    <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
-                    <p>
-                        <strong>Formal Western Wear</strong>
-                        <br>
-                        Please avoid wearing white (bride color) or black (funeral color).
-                        Ladies can wear what makes you feel fabulous but yet comfortable.
-                        <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Here are some samples</a>
-                        Gentlemen can adorn thier
-                        <a href="https://pl.pinterest.com/aliklimk/mens-attire/"> Summer Suits</a> 
-                        If it is a sweltering summer, a spare shirt to change into would be handy.
+    <section id="video-bg" class="hidden-sm hidden-xs" >
+        <div id="bgndVideo" class="player"
+            data-property="{videoURL:'https://youtu.be/mhN3eph2GnM',
+            containment:'#video-bg',autoPlay:true, mute:true, showControls:false, 
+            startAt:15, stopAt:220, opacity:1,useNoCookie: true}">
+        </div>
+        <div id="video-content">
+            <h5>Krakow</h5>
+            <p>City of Castles</p>
+        </div>
+    </section>
+    <!-- $('.player').setSize(width='100%'); -->
+    <section id="map" class="section-padding">
+        <div class="text-center">
+            <h3>How do I get there?</h3>
+            <p>It's much simpler than you think!</p>
+        </div>
+        <div id="map-canvas"></div>
+        <div id="map-content-wrapper" class="container pointer-events-none">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                    <div class="text-center">
+                        <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                        </div>
+                    </div>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Willa Decjusza</h5>
+                                <p>28 Lipca 1943 17 a, 30-227 Kraków, Poland</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Zuzanna Ploch</h5>
+                                <p><i class="fa fa-mobile"></i> <a href="tel://+48 12 425 36 44">+48 12 425 36 44</a><br>
+                                    <i class="fa fa-mobile"></i> <a href="http://villa.org.pl/">http://villa.org.pl/</a></p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small"
+                                href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277">
+                                <i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                            </div>
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" id="btn-show-map"
+                                href="https://www.google.com/maps/place/Villa+Decius+Association/@50.0636111,19.869478,17z/data=!3m1!4b1!4m5!3m4!1s0x47165be664645ae5:0x4a28c9f2707010bc!8m2!3d50.0636111!4d19.8716667">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp text-center" id="rsvp">
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>Thank you!</h3>
+                            <p>We are glad to have you join us on our big day.</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>RSVP</h3>
+                    <p>We would greatly appreciate if you could RSVP before 21st of May '21. But, we do understand that things could change
+                        due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)
                     </p>
-                    <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
-                    <p>
-                        <strong>Comfortable Western Attire</strong>
-                        <br>
-                        You can optionally change into semi-formal look that is contemporary & fashionable 
-                        as long as you dont steal the thunder of the night ;)
-                        Keep in mind that there will be plenty of delicious food, so plan some space for it. 
-                        Dancing is on the agenda, so comfortable shoes will be a great. 
-                        Polish women will often bring flats and change them in the middle of the part
-                        You can see some pins for
-                        <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Ladies</a>
-                        & <a href="https://pl.pinterest.com/aliklimk/mens-attire/">Gents</a>.
-                    </p>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-</section>
-
-<!-- <section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>A picture is worth a thousand words!</h3>
-                <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
-                </p>
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="img/iphone_instagram.jpg">
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">OUR STORY</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-10.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-10.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-9a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-9.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-8a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-8.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-7a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-7.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-6a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-6.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-5a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-5.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-4a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-4.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-3a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-3.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-2a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-2.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/-1a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/-1.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/0a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/0.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/1a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/1.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/2a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/2.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/3a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/3.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/4a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/4.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/5a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/5.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/6a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/6.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/7a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/7.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>            
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/8a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/8.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>    
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/9a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/9.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/10a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/10.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/11a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/11.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>            
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/12.ajpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/12.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/13a.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/13.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>                                           
-            <!-- <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/6.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/6.jpg" alt=""/>
-                    </div>
-                </a>
-            </div> -->
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs" >
-    <div id="bgndVideo" class="player"
-        data-property="{videoURL:'https://youtu.be/mhN3eph2GnM',
-        containment:'#video-bg',autoPlay:true, mute:true, showControls:false, 
-        startAt:15, stopAt:220, opacity:1,realFullscreen: true,
-        useNoCookie: true, optimizeDisplay: true}">
-    </div>
-    <div id="video-content">
-        <h5>Krakow</h5>
-        <p>City of Castles</p>
-    </div>
-</section>
-<!-- $('.player').setSize(width='100%'); -->
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's much simpler than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Willa Decjusza</h5>
-                            <p>28 Lipca 1943 17 a, 30-227 Kraków, Poland</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Zuzanna Ploch</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+48 12 425 36 44">+48 12 425 36 44</a><br>
-                                <i class="fa fa-mobile"></i> <a href="http://villa.org.pl/">http://villa.org.pl/</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277">
-                               <i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"
-                            href="https://www.google.com/maps/place/Villa+Decius+Association/@50.0636111,19.869478,17z/data=!3m1!4b1!4m5!3m4!1s0x47165be664645ae5:0x4a28c9f2707010bc!8m2!3d50.0636111!4d19.8716667">
-                            <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show Map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to have you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>RSVP</h3>
-                <p>We would greatly appreciate if you could RSVP before 21st of May '21. But, we do understand that things could change
-                    due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)
-                </p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                    <form id="rsvp-form" class="rsvp-form"
+                        action=""
+                        method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                        placeholder="Your email"
+                                                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="name" class=""
+                                                                    placeholder="Your name"
+                                                                    required>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                    max="6"
+                                                                    placeholder="Partners / Kids"
+                                                                    required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code"
+                                                                    class="" min="0"
+                                                                    placeholder="Invite Code"
+                                                                    required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="6"
-                                                                  placeholder="Partners / Kids"
-                                                                  required>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-cutlery"></i><input list="foodoptions" name="foodpref" id="foodpref" 
+                                                                        class=""
+                                                                        placeholder="Dietary Preference"
+                                                                        required>
+                                                                        <datalist id="foodoptions">
+                                                                            <option value="Vegetarian">
+                                                                            <option value="Non-Vegetarian">
+                                                                        </datalist>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite Code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-cutlery"></i><input list="foodoptions" name="foodpref" id="foodpref" 
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-exclamation-triangle"></i><input name="allergies"  id="allergies"
                                                                     class=""
-                                                                     placeholder="Dietary Preference"
-                                                                     required>
-                                                                     <datalist id="foodoptions">
-                                                                        <option value="Vegetarian">
-                                                                        <option value="Non-Vegetarian">
-                                                                      </datalist>
+                                                                    placeholder="Food Allergies"
+                                                                    required>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-exclamation-triangle"></i><input name="allergies"  id="allergies"
-                                                                class=""
-                                                                 placeholder="Food Allergies"
-                                                                 required>
-                            </div>
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        CHECK-IN
-                    </button>
-                </form>
+                        <button class="btn-fill rsvp-btn">
+                            CHECK-IN
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>
 
 <footer>
