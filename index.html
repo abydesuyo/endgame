@@ -40,7 +40,7 @@
 <![endif]-->
 <div id="languagepicker" class="row">
     <div style="text-align: center">
-        <img src="invite_top.jpg">
+        <img src="img/invite_top.jpg">
         <div class="hero-content text-center">
             <img src="img/logo-lg.png">
         </div>
@@ -51,6 +51,7 @@
                         $('#bgndVideo').load(location.href+' #bgndVideo>*','');
                         document.getElementById('maincontents').style.display = 'block';
                         document.getElementById('languagepicker').style.display = 'none';
+                        document.documentElement.setAttribute('lang', 'en');
                         $('.player').YTPlayer();
                         " 
                     class="btn-white btn-small">ENGLISH</button>
@@ -64,6 +65,7 @@
                         $('#bgndVideo').load(location.href+' #bgndVideo>*','');
                         document.getElementById('maincontents').style.display = 'block';
                         document.getElementById('languagepicker').style.display = 'none';
+                        document.documentElement.setAttribute('lang', 'pl');
                         $('.player').YTPlayer();
                         change_lang('pl');
                         " 
@@ -71,7 +73,7 @@
                 </div>
             </div>
         <!-- </div> -->
-        <img src="invite_bottom.jpg">
+        <img src="img/invite_bottom.jpg">
     </div>
 </div>
 <div id="maincontents" style="display:none; width: 100%;">
@@ -84,7 +86,7 @@
                         <nav>
                             <ul class="primary-nav">
                                 <li><a href="#intro" data-translate="intro">How we met</a></li>
-                                <li><a href="#events" data-translate="events">Events</a></li>
+                                <li><a href="#events" data-translate="events">Event Timeline</a></li>
                                 <!-- <li><a href="#instagram">Instagram</a></li> -->
                                 <li><a href="#eng-pics" data-translate="story">Our Story</a></li>
                                 <li class="hidden-sm hidden-xs"><a href="#video-bg" data-translate="city">Glimpse of the city</a></li>
@@ -139,7 +141,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header" data-translate="venue">How we met</h3>
+                    <h3 class="header" data-translate="intro">How we met</h3>
                 </div>
             </div>
             <div class="row">
@@ -173,7 +175,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header" data-translate="events">Events</h3>
+                    <h3 class="header" data-translate="events">Event Timeline</h3>
                     <p data-translate="eventdate"><strong>21st August</strong></p>
                 </div>
             </div>
@@ -587,7 +589,7 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small"
+                                <a class="btn btn-accent btn-small"
                                 href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277">
                                 <i class="fa fa-taxi"></i>&nbsp;&nbsp;<label>Book Uber</label></a>
                             </div>
@@ -703,7 +705,7 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Built in VSCode with <span class="fa fa-heart pulse2"></span> for Hacking Projects</p>
+                <p>Built in VSCode with <span class="fa fa-heart pulse2"></span> for Coding Projects</p>
             </div>
         </div>
     </div>

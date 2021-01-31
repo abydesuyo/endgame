@@ -213,14 +213,29 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
         var tempvar = $('#invite_code').val();
+        var current_lang = document.documentElement.lang;
+        var rsvp_mesg_dict = {
+            'info':{
+                'en':'<strong>Just a sec!</strong> We are saving your details.',
+                'pl':'<strong> Chwileczkę! </strong> Zapisujemy Twoje dane.',
+            },
+            'badinvitecode':{
+                'en':'<strong>Sorry!</strong> Your invite code is incorrect.',
+                'pl':'<strong> Przepraszamy! </strong> Twój kod jest nieprawidłowy.',
+            },
+            'badserver':{
+                'en':'<strong>Sorry!</strong> There is some issue with the server.',
+                'pl':'<strong> Przepraszamy! </strong> Wystąpił problem z serwerem.'
+            }
+        }
         // $('#alert-wrapper').html(alert_markup('info', `Using code ${tempvar}`));
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', rsvp_mesg_dict['info'][current_lang]));
 
         if (MD5($('#invite_code').val()) !== '1b4b16ae294b41580302d0090a902233'
             || 
             MD5($('#invite_code').val()) !== '1b4b16ae294b41580302d0090a902233') 
             {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', rsvp_mesg_dict['badinvitecode'][current_lang]));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyYbKvXmV1KSqEIWw3Tj9swjdj_MObNNX618qH9cshuSrZhQnLidM22/exec', data)
                 .done(function (data) {
@@ -234,7 +249,7 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', rsvp_mesg_dict['badserver'][current_lang]));
                 });
         }
     });
@@ -246,12 +261,12 @@ $(document).ready(function () {
 
 var dictionary = {
     'intro': {
-        'en': 'How We Met',
+        'en': 'HOW WE MET',
         'pl': 'JAK SIĘ POZNALIŚMY',
     },
     'events': {
-        'en': 'Events',
-        'pl': 'WYDARZENIA',
+        'en': 'EVENT TIMELINE',
+        'pl': 'PLAN WYDARZENIA',
     },
     'story': {
         'en': 'OUT STORY',
@@ -262,7 +277,7 @@ var dictionary = {
         'pl': 'RZUT OKA NA MIASTO',
     },
     'venue': {
-        'en': 'How We Met',
+        'en': 'VENUE',
         'pl': 'MIEJSCE WYDARZENIA',
     },
     'savethedate': {
