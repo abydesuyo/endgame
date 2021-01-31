@@ -271,11 +271,11 @@ var dictionary = {
     },
     'savethedatetext': {
         'en': 'How We MetIt is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
-        'pl': 'Jest to 21<sup>st</sup> of Sierpnia \'21 i chcielibyśmy, aby być częścią naszej radosnej chwili.',
+        'pl': 'Ceremonia odbędzie się 21<sup>st</sup> Sierpnia \'21 i będzie nam miło jeżeli dołączycie do nas.',
     },
     'storycontent': {
         'en': 'On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
-        'pl': 'Tamtej pamiętnej nocy, dzięki okropnemu filmowi z randkami (Dunkierka), zamiast tego znaleźliśmy się ;o)  Film szczegółowo opisywał okropne sposoby, w jakie żołnierze mogli zostać zabici. I wyglądało  to bardzo beznadziejnie, a potem włączyła zaklęcie, znane jako Lollipop. Najlepsza rzecz, jaka mi  się przydarzyła w tamtym roku; o) W tym momencie w jakiś sposób wiedzieliśmy, że jesteśmy razem.  Kolejne 3 lata minęły! Na początku było dużo zabawy, a potem całkiem przetestowaliśmy nasz związek.  Zrobiliśmy nawet wyprawę na plażę przeklętego Alexa Zushiego, a mimo to nie doszliśmy do skutku ;o)  Było dużo więcej testów, które nastąpiły wraz z całym szczęściem, ale ostatecznie szczęście zwyciężyło ;o)  A gdy już pokonaliśmy ostatnią granicę polskich i indiańskich wyjazdów do domu, wiedzieliśmy, że damy radę.  A jeszcze lepiej, zaczęliśmy wydobywać z siebie to, co najlepsze. I tak oto jesteśmy :) ',
+        'pl': 'Tamtego weiczora spotkalismy sie żeby iść do kina na Dunkierke. Film szczegółowo pokazywał coraz to bardziej wyrafinowane sposoby, w jakie gineli żołnierze. Wyglądało to wszystko nie najlepiej. Potem ja wiciągnełam lizaki. Aby twierdzi, że to najlepsza rzecz, jaka mu się przydarzyła w tamtym roku. W tym momencie w jakiś sposób wiedzieliśmy, że będziemy razem. Kolejne 3 lata minęły! Na początku było dużo radości i zabawy, pojechalismy na narty i w tropiki. A potem troche przetestowaliśmy nasz związek. Pokonaliśmy ostatnie granice Polski i Indi, przetrwaliśmy 7 dni na rowerach i wiedzieliśmy, że damy radę. I tak oto jesteśmy :)',
     },
     'eventdate':{
         'en':'21st August',
@@ -287,39 +287,39 @@ var dictionary = {
     },
     'receptiondata':{
         'en':'Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored',
-        'pl':'Wesele w stylu polskim. Mnóstwo jedzenia i napojów. A jeśli się nudzisz, fotobudka',
+        'pl':'Mnóstwo jedzenia i napojów. A jeśli się nudzisz, fotobudka',
     },
     'dancedata':{
         'en':'Dance to your favourite tunes while having Polish food and Vodka?',
-        'pl':'Tańcz do ulubionych melodii, jedząc polskie jedzenie i wódkę?',
+        'pl':'Tańcz do ulubionych melodii.',
     },
     'dance':{
         'en':'Dance All Night ',
-        'pl':'TANIEC CAŁĄ NOC ',
+        'pl':'TAŃCZ CAŁĄ NOC ',
     },
     'dresscode':{
         'en':'Dress Code',
-        'pl':'Kod ubioru',
+        'pl':'Strój',
     },
     'formalwear':{
         'en':'Formal Western Wear',
-        'pl':'Formalne Stroje Wsternowe',
+        'pl':'Strój formalny',
     },
     'semiformalwear':{
         'en':'Comfortable Western Wear',
-        'pl':'Wygodny Westernowy Stróje',
+        'pl':'Wygodny Strój',
     },
     'ladiesformaldesc':{
         'en':'Please avoid wearing white (bride color) or black (funeral color). Ladies can wear what makes you feel fabulous but yet comfortable',
-        'pl':'Prosimy unikać noszenia bieli (kolor panny młodej) lub czerni (kolor pogrzebowy). Panie mogą nosić to, co sprawia, że ​​czujesz się fantastycznie, ale jednocześnie wygodnie.',
+        'pl':'Prosimy unikać noszenia bieli (kolor panny młodej) lub czerni (kolor pogrzebowy). Panie mogą nosić to, co sprawia, że ​​czujesz się jak gwiazda, ale jednocześnie przypominamy, że wygoda jest ważna.',
     },
     'ladiesformal':{
         'en':'Here are some samples',
-        'pl':'Oto kilka przykładów, które',
+        'pl':'Oto kilka przykładów dla Pań',
     },
     'gentsformaldesc':{
         'en':'Gentlemen can adorn thier',
-        'pl':'Panowie mogą ozdobić swoje',
+        'pl':'Inspiracje dla Panów',
     },
     'gentsformal':{
         'en':'Summer Suits',
@@ -327,11 +327,11 @@ var dictionary = {
     },
     'wearadvice':{
         'en':'If it is a sweltering summer, a spare shirt to change into would be handy.',
-        'pl':'Jeśli jest upalne lato, przydałaby się zapasowa koszula do przebrania.',
+        'pl':'Jeśli jest upalne lato, warto pomyśleć o zapasowej koszuli.',
     },
     'semiformalweardesc':{
         'en':'You can optionally change into semi-formal look that is contemporary & fashionable  as long as you dont steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it.  Dancing is on the agenda, so comfortable shoes will be a great.  Polish women will often bring flats and change them in the middle of the part You can see some pins for',
-        'pl':'Opcjonalnie możesz zmienić na półformalny wygląd, który jest nowoczesny i modny, o ile nie ukradniesz  nocnych grzmotów ;) Pamiętaj, że pysznego jedzenia będzie mnóstwo, więc zaplanuj dla niego trochę miejsca.  Taniec jest na porządku dziennym, więc wygodne buty będą świetne.  Polki często przynoszą mieszkania i zmieniają je w środku części.  Można zobaczyć przypinki dla',
+        'pl':'Opcjonalnie możesz wybrać półformalny wygląd, który jest nowoczesny i modny, o ile nie ukradniesz nie przyćmisz młodej pary ;) Pamiętaj, że pysznego jedzenia będzie mnóstwo, więc zaplanuj dla niego trochę miejsca. Pamietaj też żeby Twoje buty były wygodne i pozwoliły na tańce przez całą noc.',
     },
     'ladies':{
         'en':'Ladies',
@@ -343,7 +343,7 @@ var dictionary = {
     },
     'citydesc':{
         'en':'City of Castles',
-        'pl':'Miasto Zamków',
+        'pl':'Królewskie miasto Kraków',
     },
     'directions':{
         'en':'How do I get there?',
@@ -367,11 +367,11 @@ var dictionary = {
     },
     'thankyoumessage':{
         'en':'We are excited to have you join us on our big day.',
-        'pl':'Cieszymy się, że dołączysz do nas w tym wielkim dniu.',
+        'pl':'Cieszymy się, że dołączysz do nas w tym ważnym dniu.',
     },
     'rsvpmessage':{
         'en':'We would greatly appreciate if you could RSVP before 21st of May \'21. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)',
-        'pl':'Bylibyśmy bardzo wdzięczni, gdybyś mógł złożyć odpowiedź przed 21 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii.',
+        'pl':'Bylibyśmy bardzo wdzięczni, gdybyś mógł zdecydować przed 21 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii i nie tylko.',
     },
     'youremail':{
         'en':'Your email',
@@ -383,11 +383,11 @@ var dictionary = {
     },
     'yourplusone':{
         'en':'Partner / Kids',
-        'pl':'Partnerzy / Dzieci',
+        'pl':'Partner/Partnerka / Dzieci',
     },
     'yourinvitecode':{
         'en':'Invite Code',
-        'pl':'Zaproś kod',
+        'pl':'kod RSVP',
     },
     'food':{
         'en':'Dietary Preference',
