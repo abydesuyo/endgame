@@ -271,7 +271,7 @@ var dictionary = {
     },
     'savethedatetext': {
         'en': 'How We MetIt is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
-        'pl': 'Jest to 21<sup>st</sup> of Sierpnia \'21 i chcielibyśmy, aby być częścią naszej radosnej chwili.our joyful moment.',
+        'pl': 'Jest to 21<sup>st</sup> of Sierpnia \'21 i chcielibyśmy, aby być częścią naszej radosnej chwili.',
     },
     'storycontent': {
         'en': 'On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
