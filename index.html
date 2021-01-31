@@ -38,7 +38,7 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<div id="language" class="row">
+<div id="languagepicker" class="row">
     <div style="text-align: center">
         <img src="invite_top.jpg">
         <div class="hero-content text-center">
@@ -49,8 +49,8 @@
                 <div class="wp1">
                     <button onclick="
                         $('#bgndVideo').load(location.href+' #bgndVideo>*','');
-                        document.getElementById('english').style.display = 'block';
-                        document.getElementById('language').style.display = 'none';
+                        document.getElementById('maincontents').style.display = 'block';
+                        document.getElementById('languagepicker').style.display = 'none';
                         $('.player').YTPlayer();
                         " 
                     class="btn-white btn-small">ENGLISH</button>
@@ -62,9 +62,10 @@
                 <div class="wp2">
                     <button onclick="
                         $('#bgndVideo').load(location.href+' #bgndVideo>*','');
-                        document.getElementById('polish').style.display = 'block';
-                        document.getElementById('language').style.display = 'none';
+                        document.getElementById('maincontents').style.display = 'block';
+                        document.getElementById('languagepicker').style.display = 'none';
                         $('.player').YTPlayer();
+                        change_lang('pl');
                         " 
                     class="btn-white btn-small">POLSKI</button>
                 </div>
@@ -73,7 +74,7 @@
         <img src="invite_bottom.jpg">
     </div>
 </div>
-<div id="english" style="display:none; width: 100%;">
+<div id="maincontents" style="display:none; width: 100%;">
     <section class="hero">
         <section class="navigation">
             <header>
@@ -82,14 +83,14 @@
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                                <li><a href="#intro">How we met</a></li>
-                                <li><a href="#events">Events</a></li>
+                                <li><a href="#intro" data-translate="intro">How we met</a></li>
+                                <li><a href="#events" data-translate="events">Events</a></li>
                                 <!-- <li><a href="#instagram">Instagram</a></li> -->
-                                <li><a href="#eng-pics">Our Story</a></li>
-                                <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                                <li><a href="#eng-pics" data-translate="story">Our Story</a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#video-bg" data-translate="city">Glimpse of the city</a></li>
                             </ul>
                             <ul class="member-actions">
-                                <li><a href="#map" class="login">Venue</a></li>
+                                <li><a href="#map" class="login" data-translate="venue">Venue</a></li>
                                 <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                             </ul>
                         </nav>
@@ -125,8 +126,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3>Save the Dates</h3>
-                    <p>It is the 21<sup>st</sup> of August '21 and we would like you to be a part of
+                    <h3 data-translate="savethedate">Save the Dates</h3>
+                    <p data-translate="savethedatetext">It is the 21<sup>st</sup> of August '21 and we would like you to be a part of
                         our joyful moment.</p>
                     <div class="share-bar"></div>
                 </div>
@@ -138,13 +139,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header">How we met</h3>
+                    <h3 class="header" data-translate="venue">How we met</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
                 <div class="col-md-6">
-                    <p>
+                    <p data-translate="storycontent">
                         On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o)
                         The movie went about in detail about horrible ways in which soldiers could get killed. 
                         And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing
@@ -172,21 +173,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header">Events</h3>
-                    <p><strong>21st August</strong></p>
+                    <h3 class="header" data-translate="events">Events</h3>
+                    <p data-translate="eventdate"><strong>21st August</strong></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
-                        <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
-                        <p>Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored</p>
+                        <h5> <span data-translate="reception">Wedding Reception </span> <span class="time">3PM - 7PM</span></h5>
+                        <p data-translate="receptiondata">Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
                         <!-- <p><strong>21st August</strong></p> -->
-                        <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
+                        <h5> <span data-translate="dance">Dance All Night </span><span class="time">7PM - 3AM</span></h5>
                         <p>Dance to your favourite tunes while having Polish food and Vodka?</p>
                     </div>                
                     <!-- <div class="wp6">
@@ -200,7 +201,7 @@
             </div>
             <div class="row section-padding">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal" data-translate="dresscode">
                         <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
                     </a>
                 </div>
@@ -217,30 +218,31 @@
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                         </button>
-                        <h3 class="text-center section-padding">Dress Code</h3>
-                        <h5>Wedding Reception <span class="time">5PM - 7PM</span></h5>
+                        <h3 class="text-center section-padding" data-translate="dresscode">Dress Code</h3>
+                        <h5> <span data-translate="reception">Wedding Reception</span><span class="time">5PM - 7PM</span></h5>
                         <p>
-                            <strong>Formal Western Wear</strong>
+                            <strong data-translate="formalwear">Formal Western Wear</strong>
                             <br>
+                            <summary data-translate="ladiesformaldesc">
                             Please avoid wearing white (bride color) or black (funeral color).
-                            Ladies can wear what makes you feel fabulous but yet comfortable.
-                            <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Here are some samples</a>
-                            Gentlemen can adorn thier
-                            <a href="https://pl.pinterest.com/aliklimk/mens-attire/"> Summer Suits</a> 
-                            If it is a sweltering summer, a spare shirt to change into would be handy.
+                            Ladies can wear what makes you feel fabulous but yet comfortable.</summary>
+                            <a data-translate="ladiesformal" href="https://pl.pinterest.com/aliklimk/womens-attire/">Here are some samples</a>
+                            <summary data-translate="gentsformaldesc"> Gentlemen can adorn thier</summary>
+                            <a href="https://pl.pinterest.com/aliklimk/mens-attire/" data-translate="gentsformal"> Summer Suits</a> 
+                            <summary data-translate="wearadvice"> If it is a sweltering summer, a spare shirt to change into would be handy.</summary>
                         </p>
-                        <h5>Dance All Night <span class="time">7PM - 3AM</span></h5>
+                        <h5><span data-translate='dance'>Dance All Night </span><span class="time">7PM - 3AM</span></h5>
                         <p>
-                            <strong>Comfortable Western Attire</strong>
-                            <br>
+                            <strong data-translate="semiformalwear">Comfortable Western Attire</strong>
+                            <br><summary data-translate="semiformalweardesc">
                             You can optionally change into semi-formal look that is contemporary & fashionable 
                             as long as you dont steal the thunder of the night ;)
                             Keep in mind that there will be plenty of delicious food, so plan some space for it. 
                             Dancing is on the agenda, so comfortable shoes will be a great. 
                             Polish women will often bring flats and change them in the middle of the part
-                            You can see some pins for
-                            <a href="https://pl.pinterest.com/aliklimk/womens-attire/">Ladies</a>
-                            & <a href="https://pl.pinterest.com/aliklimk/mens-attire/">Gents</a>.
+                            You can see some pins for</summary>
+                            <a href="https://pl.pinterest.com/aliklimk/womens-attire/" data-translate="ladies">Ladies</a>
+                            & <a href="https://pl.pinterest.com/aliklimk/mens-attire/" data-translate="gents">Gents</a>.
                         </p>
                     </div>
                 </div><!-- /.modal-content -->
@@ -271,7 +273,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header">OUR STORY</h3>
+                    <h3 class="header" data-translate="story">OUR STORY</h3>
                 </div>
             </div>
             <div class="row">
@@ -425,7 +427,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
+                <!-- <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/eng_pics/5a.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
@@ -434,7 +436,7 @@
                             <img src="img/eng_pics/5.jpg" alt=""/>
                         </div>
                     </a>
-                </div>
+                </div> -->
                 <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/eng_pics/6a.jpg">
                         <div class="img-wrap">
@@ -550,14 +552,14 @@
         </div>
         <div id="video-content">
             <h5>Krakow</h5>
-            <p>City of Castles</p>
+            <p data-translate="citydesc">City of Castles</p>
         </div>
     </section>
     <!-- $('.player').setSize(width='100%'); -->
     <section id="map" class="section-padding">
         <div class="text-center">
-            <h3>How do I get there?</h3>
-            <p>It's much simpler than you think!</p>
+            <h3 data-translate="directions">How do I get there?</h3>
+            <p data-translate="directionstip">It's much simpler than you think!</p>
         </div>
         <div id="map-canvas"></div>
         <div id="map-content-wrapper" class="container pointer-events-none">
@@ -565,17 +567,20 @@
                 <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
                     <div class="text-center">
                         <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; <span data-translate="showinfo"> Show info</span>
                         </div>
                     </div>
                     <div id="map-content" class="pointer-events-auto">
                         <div class="row">
+                            <h5 style="text-align: center;">Willa Decjusza</h5>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6">
-                                <h5>Willa Decjusza</h5>
+                                <!-- <h5>Willa Decjusza</h5> -->
                                 <p>28 Lipca 1943 17 a, 30-227 Kraków, Poland</p>
                             </div>
                             <div class="col-md-6">
-                                <h5>Zuzanna Ploch</h5>
+                                <!-- <h5>Zuzanna Polanski</h5> -->
                                 <p><i class="fa fa-mobile"></i> <a href="tel://+48 12 425 36 44">+48 12 425 36 44</a><br>
                                     <i class="fa fa-mobile"></i> <a href="http://villa.org.pl/">http://villa.org.pl/</a></p>
                             </div>
@@ -584,12 +589,12 @@
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small"
                                 href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277">
-                                <i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                <i class="fa fa-taxi"></i>&nbsp;&nbsp;<label>Book Uber</label></a>
                             </div>
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" id="btn-show-map"
                                 href="https://www.google.com/maps/place/Villa+Decius+Association/@50.0636111,19.869478,17z/data=!3m1!4b1!4m5!3m4!1s0x47165be664645ae5:0x4a28c9f2707010bc!8m2!3d50.0636111!4d19.8716667">
-                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show Map</a>
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<label data-translate="showmap">Show Map</label></a>
                             </div>
                         </div>
                     </div>
@@ -607,8 +612,8 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                         </button>
                         <div class="section-padding">
-                            <h3>Thank you!</h3>
-                            <p>We are glad to have you join us on our big day.</p>
+                            <h3 data-translate="thankyou">Thank you!</h3>
+                            <p data-translate="thankyoumessage">We are excited to have you join us on our big day.</p>
                             <div id="add-to-cal"></div>
                         </div>
                     </div>
@@ -620,8 +625,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h3>RSVP</h3>
-                    <p>We would greatly appreciate if you could RSVP before 21st of May '21. But, we do understand that things could change
-                        due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)
+                    <p data-translate="rsvpmessage">We would greatly appreciate if you could RSVP before 21st of May '21. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)
                     </p>
                     <form id="rsvp-form" class="rsvp-form"
                         action=""
@@ -629,14 +633,14 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                    <i class="fa fa-envelope"></i><input data-translate="youremail" type="email" name="email" class=""
                                                                         placeholder="Your email"
                                                                         required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class=""
+                                    <i class="fa fa-user"></i><input data-translate="yourname" name="name" class=""
                                                                     placeholder="Your name"
                                                                     required>
                                 </div>
@@ -645,15 +649,15 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                    max="6"
-                                                                    placeholder="Partners / Kids"
+                                    <i class="fa fa-users"></i><input data-translate="yourplusone" type="number" name="extras" class="" 
+                                                                    min="0" max="6"
+                                                                    placeholder="Partner / Kids"
                                                                     required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code"
+                                    <i class="fa fa-key"></i><input data-translate="yourinvitecode" type="text" name="invite_code" id="invite_code"
                                                                     class="" min="0"
                                                                     placeholder="Invite Code"
                                                                     required>
@@ -663,19 +667,19 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-cutlery"></i><input list="foodoptions" name="foodpref" id="foodpref" 
+                                    <i class="fa fa-cutlery"></i><input data-translate="food" list="foodoptions" name="foodpref" id="foodpref" 
                                                                         class=""
                                                                         placeholder="Dietary Preference"
                                                                         required>
                                                                         <datalist id="foodoptions">
-                                                                            <option value="Vegetarian">
-                                                                            <option value="Non-Vegetarian">
+                                                                            <option data-translate="vegopt" value="Vegetarian">
+                                                                            <option data-translate="nonvegopt" value="Non-Vegetarian">
                                                                         </datalist>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-exclamation-triangle"></i><input name="allergies"  id="allergies"
+                                    <i class="fa fa-exclamation-triangle"></i><input data-translate="allergies" name="allergies"  id="allergies"
                                                                     class=""
                                                                     placeholder="Food Allergies"
                                                                     required>
@@ -685,7 +689,7 @@
                         <div class="row">
                             <div class="col-md-12" id="alert-wrapper"></div>
                         </div>
-                        <button class="btn-fill rsvp-btn">
+                        <button class="btn-fill rsvp-btn" data-translate="checkin">
                             CHECK-IN
                         </button>
                     </form>
@@ -694,13 +698,12 @@
         </div>
     </section>
 </div>
-
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by VSCode with lots of <span class="fa fa-heart pulse2"></span> for Coding Projects</p>
+                <p>Built in VSCode with <span class="fa fa-heart pulse2"></span> for Hacking Projects</p>
             </div>
         </div>
     </div>

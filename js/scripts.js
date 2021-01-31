@@ -241,6 +241,191 @@ $(document).ready(function () {
 
 });
 
+
+/**************** Language Switcher *****************/
+
+var dictionary = {
+    'intro': {
+        'en': 'How We Met',
+        'pl': 'JAK SIĘ POZNALIŚMY',
+    },
+    'events': {
+        'en': 'Events',
+        'pl': 'WYDARZENIA',
+    },
+    'story': {
+        'en': 'OUT STORY',
+        'pl': 'NASZA HISTORIA',
+    },
+    'city': {
+        'en': 'GLIMPLSE OF THE CITY',
+        'pl': 'RZUT OKA NA MIASTO',
+    },
+    'venue': {
+        'en': 'How We Met',
+        'pl': 'MIEJSCE WYDARZENIA',
+    },
+    'savethedate': {
+        'en': 'Save the Dates',
+        'pl': 'ZAPISZ DATY',
+    },
+    'savethedatetext': {
+        'en': 'How We MetIt is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
+        'pl': 'Jest to 21<sup>st</sup> of Sierpnia \'21 i chcielibyśmy, aby być częścią naszej radosnej chwili.our joyful moment.',
+    },
+    'storycontent': {
+        'en': 'On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
+        'pl': 'Tamtej pamiętnej nocy, dzięki okropnemu filmowi z randkami (Dunkierka), zamiast tego znaleźliśmy się ;o)  Film szczegółowo opisywał okropne sposoby, w jakie żołnierze mogli zostać zabici. I wyglądało  to bardzo beznadziejnie, a potem włączyła zaklęcie, znane jako Lollipop. Najlepsza rzecz, jaka mi  się przydarzyła w tamtym roku; o) W tym momencie w jakiś sposób wiedzieliśmy, że jesteśmy razem.  Kolejne 3 lata minęły! Na początku było dużo zabawy, a potem całkiem przetestowaliśmy nasz związek.  Zrobiliśmy nawet wyprawę na plażę przeklętego Alexa Zushiego, a mimo to nie doszliśmy do skutku ;o)  Było dużo więcej testów, które nastąpiły wraz z całym szczęściem, ale ostatecznie szczęście zwyciężyło ;o)  A gdy już pokonaliśmy ostatnią granicę polskich i indiańskich wyjazdów do domu, wiedzieliśmy, że damy radę.  A jeszcze lepiej, zaczęliśmy wydobywać z siebie to, co najlepsze. I tak oto jesteśmy :) ',
+    },
+    'eventdate':{
+        'en':'21st August',
+        'pl':'21 sierpnia',
+    },
+    'reception':{
+        'en':'Wedding Reception ',
+        'pl':'PRZYJĘCIE WESELNE ',
+    },
+    'receptiondata':{
+        'en':'Polish style wedding reception. Plenty of food and drinks. And a photobooth if you are bored',
+        'pl':'Wesele w stylu polskim. Mnóstwo jedzenia i napojów. A jeśli się nudzisz, fotobudka',
+    },
+    'dancedata':{
+        'en':'Dance to your favourite tunes while having Polish food and Vodka?',
+        'pl':'Tańcz do ulubionych melodii, jedząc polskie jedzenie i wódkę?',
+    },
+    'dance':{
+        'en':'Dance All Night ',
+        'pl':'TANIEC CAŁĄ NOC ',
+    },
+    'dresscode':{
+        'en':'Dress Code',
+        'pl':'Kod ubioru',
+    },
+    'formalwear':{
+        'en':'Formal Western Wear',
+        'pl':'Formalne Stroje Wsternowe',
+    },
+    'semiformalwear':{
+        'en':'Comfortable Western Wear',
+        'pl':'Wygodny Westernowy Stróje',
+    },
+    'ladiesformaldesc':{
+        'en':'Please avoid wearing white (bride color) or black (funeral color). Ladies can wear what makes you feel fabulous but yet comfortable',
+        'pl':'Prosimy unikać noszenia bieli (kolor panny młodej) lub czerni (kolor pogrzebowy). Panie mogą nosić to, co sprawia, że ​​czujesz się fantastycznie, ale jednocześnie wygodnie.',
+    },
+    'ladiesformal':{
+        'en':'Here are some samples',
+        'pl':'Oto kilka przykładów, które',
+    },
+    'gentsformaldesc':{
+        'en':'Gentlemen can adorn thier',
+        'pl':'Panowie mogą ozdobić swoje',
+    },
+    'gentsformal':{
+        'en':'Summer Suits',
+        'pl':'letnie garnitury',
+    },
+    'wearadvice':{
+        'en':'If it is a sweltering summer, a spare shirt to change into would be handy.',
+        'pl':'Jeśli jest upalne lato, przydałaby się zapasowa koszula do przebrania.',
+    },
+    'semiformalweardesc':{
+        'en':'You can optionally change into semi-formal look that is contemporary & fashionable  as long as you dont steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it.  Dancing is on the agenda, so comfortable shoes will be a great.  Polish women will often bring flats and change them in the middle of the part You can see some pins for',
+        'pl':'Opcjonalnie możesz zmienić na półformalny wygląd, który jest nowoczesny i modny, o ile nie ukradniesz  nocnych grzmotów ;) Pamiętaj, że pysznego jedzenia będzie mnóstwo, więc zaplanuj dla niego trochę miejsca.  Taniec jest na porządku dziennym, więc wygodne buty będą świetne.  Polki często przynoszą mieszkania i zmieniają je w środku części.  Można zobaczyć przypinki dla',
+    },
+    'ladies':{
+        'en':'Ladies',
+        'pl':'Pań',
+    },
+    'gents':{
+        'en':'Gents',
+        'pl':'Panów',
+    },
+    'citydesc':{
+        'en':'City of Castles',
+        'pl':'Miasto Zamków',
+    },
+    'directions':{
+        'en':'How do I get there?',
+        'pl':'JAK SIĘ TAM DOSTANĘ?',
+    },
+    'directionstip':{
+        'en':'It\'s much simpler than you think!',
+        'pl':'To znacznie prostsze niż myślisz!',
+    },
+    'showinfo':{
+        'en':'Show info',
+        'pl':'Pokaż informacje',
+    },
+    'showmap':{
+        'en':'Show Map',
+        'pl':'Pokaż mapę',
+    },
+    'thankyou':{
+        'en':'Thank you!',
+        'pl':'Dziękuję Ci!',
+    },
+    'thankyoumessage':{
+        'en':'We are excited to have you join us on our big day.',
+        'pl':'Cieszymy się, że dołączysz do nas w tym wielkim dniu.',
+    },
+    'rsvpmessage':{
+        'en':'We would greatly appreciate if you could RSVP before 21st of May \'21. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)',
+        'pl':'Bylibyśmy bardzo wdzięczni, gdybyś mógł złożyć odpowiedź przed 21 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii.',
+    },
+    'youremail':{
+        'en':'Your email',
+        'pl':'Twój email',
+    },
+    'yourname':{
+        'en':'Your name',
+        'pl':'Twoje imię',
+    },
+    'yourplusone':{
+        'en':'Partner / Kids',
+        'pl':'Partnerzy / Dzieci',
+    },
+    'yourinvitecode':{
+        'en':'Invite Code',
+        'pl':'Zaproś kod',
+    },
+    'food':{
+        'en':'Dietary Preference',
+        'pl':'Preferencje dietetyczne',
+    },
+    'vegopt':{
+        'en':'Vegetarian',
+        'pl':'Wegetariański',
+    },
+    'nonvegopt':{
+        'en':'Non-Vegetarian',
+        'pl':'Nie-wegetarianskie',
+    },
+    'allergies':{
+        'en':'Food Allergies',
+        'pl':'Alergie pokarmowe',
+    },
+    'checkin':{
+        'en':'CHECK-IN',
+        'pl':'ZAMELDOWAĆ-SIĘ',
+    },
+};
+
+window.change_lang = function(current_lang) {
+    translate(current_lang);
+}
+
+function translate(current_lang) {
+    $("[data-translate]").each(function() {
+      var key = $(this).data('translate');
+      if ($(this).is("input")) {
+        $(this).attr('placeholder', dictionary[key][current_lang])
+      } else {
+        $(this).html(dictionary[key][current_lang] || "N/A");
+      }
+    });
+  }
+
 /********************** Extras **********************/
 
 // Google map
