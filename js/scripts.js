@@ -282,7 +282,7 @@ var dictionary = {
     },
     'savethedate': {
         'en': 'Save the Dates',
-        'pl': 'ZAPISZ DATY',
+        'pl': 'ZAPISZ DATĘ',
     },
     'savethedatetext': {
         'en': 'How We MetIt is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
