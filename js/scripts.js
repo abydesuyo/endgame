@@ -290,7 +290,7 @@ var dictionary = {
     },
     'storycontent': {
         'en': 'On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
-        'pl': 'Tamtego weiczora spotkalismy sie żeby iść do kina na Dunkierke. Film szczegółowo pokazywał coraz to bardziej wyrafinowane sposoby, w jakie gineli żołnierze. Wyglądało to wszystko nie najlepiej. Potem ja wiciągnełam lizaki. Aby twierdzi, że to najlepsza rzecz, jaka mu się przydarzyła w tamtym roku. W tym momencie w jakiś sposób wiedzieliśmy, że będziemy razem. Kolejne 3 lata minęły! Na początku było dużo radości i zabawy, pojechalismy na narty i w tropiki. A potem troche przetestowaliśmy nasz związek. Pokonaliśmy ostatnie granice Polski i Indi, przetrwaliśmy 7 dni na rowerach i wiedzieliśmy, że damy radę. I tak oto jesteśmy :)',
+        'pl': 'Tamtego wiczoru spotkaliśmy się żeby iść do kina na Dunkierkę. Aby się spóźniał więc ja odobrałam bilety, czym zaimponowałam mu po raz pierwszy. Może nie miał za wysokich wymagań. Ja chyba też nie, po powiedziałam mu, że jak nie będzie na czas to zaprosze jakiegoś przechodnia. Kiedy już zaczął sie seans, byliśmy trochę w szoku. Film pokazywał coraz to bardziej wyrafinowane sposoby, w jakie gineli żołnierze. Oboje zastanawialiśmy się kto wybrał taki film i wyglądało to wszystko nie najlepiej. Potem ja wiciągnełam lizaki. Aby twierdzi, że to najlepsza rzecz, jaka mu się przydarzyła w tamtym roku. W tym momencie w jakiś sposób wiedzieliśmy, że będziemy razem. Mijały kolejne lata. Na początku było dużo radości i zabawy, pojechaliśmy na narty i w tropiki. Potem trochę przetestowaliśmy nasz związek kłucąc się o brudne skarpetki i inne równie ważne sprawy. W międzyczasie byliśmy zarówno w Polsce jak i w Indiach, poznaliśmy rodziny i przyjacioł. Przetrwaliśmy nie tylko rok kiszenia sie razem w domu ale i przez 7 dni w środku lata zrobiliśmy 400km na rowerach. Wiemy już, że damy radę :)',
     },
     'eventdate':{
         'en':'21st August',
@@ -325,8 +325,8 @@ var dictionary = {
         'pl':'Wygodny Strój',
     },
     'ladiesformaldesc':{
-        'en':'Please avoid wearing white (bride color) or black (funeral color). Ladies can wear what makes you feel fabulous but yet comfortable',
-        'pl':'Prosimy unikać noszenia bieli (kolor panny młodej) lub czerni (kolor pogrzebowy). Panie mogą nosić to, co sprawia, że ​​czujesz się jak gwiazda, ale jednocześnie przypominamy, że wygoda jest ważna.',
+        'en':'Please avoid wearing white (bride color) or black (funeral color). You can wear what makes you feel fabulous but yet comfortable',
+        'pl':'Załóż to co sprawia, że ​​czujesz się jak gwiazda.',
     },
     'ladiesformal':{
         'en':'Here are some samples',
@@ -345,8 +345,8 @@ var dictionary = {
         'pl':'Jeśli jest upalne lato, warto pomyśleć o zapasowej koszuli.',
     },
     'semiformalweardesc':{
-        'en':'You can optionally change into semi-formal look that is contemporary & fashionable  as long as you dont steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it.  Dancing is on the agenda, so comfortable shoes will be a great.  Polish women will often bring flats and change them in the middle of the part You can see some pins for',
-        'pl':'Opcjonalnie możesz wybrać półformalny wygląd, który jest nowoczesny i modny, o ile nie ukradniesz nie przyćmisz młodej pary ;) Pamiętaj, że pysznego jedzenia będzie mnóstwo, więc zaplanuj dla niego trochę miejsca. Pamietaj też żeby Twoje buty były wygodne i pozwoliły na tańce przez całą noc.',
+        'en':'You can optionally change into semi-formal look that is contemporary & fashionable as long as you do not steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it. Dancing is on the agenda, so comfortable shoes will be a great. Polish women will often bring flats and change them in the middle of the part You can see some pins for',
+        'pl':'Pamiętaj, że będzie mnóstwo pysznego jedzenia, więc zaplanuj dla niego trochę miejsca. Pamietaj też żeby Twoje buty były wygodne i pozwoliły na tańce przez całą noc.',
     },
     'ladies':{
         'en':'Ladies',
@@ -370,7 +370,7 @@ var dictionary = {
     },
     'showinfo':{
         'en':'Show info',
-        'pl':'Pokaż informacje',
+        'pl':'Pokaż informację',
     },
     'showmap':{
         'en':'Show Map',
@@ -378,15 +378,15 @@ var dictionary = {
     },
     'thankyou':{
         'en':'Thank you!',
-        'pl':'Dziękuję Ci!',
+        'pl':'Dziękuję!',
     },
     'thankyoumessage':{
         'en':'We are excited to have you join us on our big day.',
         'pl':'Cieszymy się, że dołączysz do nas w tym ważnym dniu.',
     },
     'rsvpmessage':{
-        'en':'We would greatly appreciate if you could RSVP before 21st of May \'21. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)',
-        'pl':'Bylibyśmy bardzo wdzięczni, gdybyś mógł zdecydować przed 21 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii i nie tylko.',
+        'en':'We would greatly appreciate if you could RSVP before 21st of May \'1. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)',
+        'pl':'Prosimy o potwierdzenie przybycia przed 1 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii i nie tylko.',
     },
     'youremail':{
         'en':'Your email',
@@ -394,7 +394,7 @@ var dictionary = {
     },
     'yourname':{
         'en':'Your name',
-        'pl':'Twoje imię',
+        'pl':'Twoje imię i nazwisko',
     },
     'yourplusone':{
         'en':'Partner / Kids',
@@ -417,12 +417,12 @@ var dictionary = {
         'pl':'Nie-wegetarianskie',
     },
     'allergies':{
-        'en':'Food Allergies',
-        'pl':'Alergie pokarmowe',
+        'en':'comments',
+        'pl':'uwagi',
     },
     'checkin':{
         'en':'CHECK-IN',
-        'pl':'ZAMELDOWAĆ-SIĘ',
+        'pl':'ZAPISZ ODPOWIEDŹ',
     },
 };
 
