@@ -269,7 +269,7 @@ var dictionary = {
         'pl': 'PLAN WYDARZENIA',
     },
     'story': {
-        'en': 'OUT STORY',
+        'en': 'OUR STORY',
         'pl': 'NASZA HISTORIA',
     },
     'city': {
