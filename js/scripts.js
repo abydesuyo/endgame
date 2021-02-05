@@ -312,8 +312,96 @@ var dictionary = {
         'en':'Dance All Night ',
         'pl':'TAŃCZ CAŁĄ NOC ',
     },
-    'dresscode':{
-        'en':'Dress Code',
+    'disclaimer':{
+        'en':'Please arrive on time, stay as long as you please. You are not obligated to stay all night.',
+        'pl':'Strój',
+    },
+    'ceremony':{
+        'en':'Ceremony',
+        'pl':'Strój',
+    },
+    'ceremonydata':{
+        'en':'Exchange of vows and rings',
+        'pl':'Strój',
+    },
+    'wishes':{
+        'en':'Wedding Wishes',
+        'pl':'Strój',
+    },
+    'wishesdata':{
+        'en':'Wishes to the Couple, glass of a sparkling wine',
+        'pl':'Strój',
+    },
+    'firstdance':{
+        'en':'First Dance',
+        'pl':'Strój',
+    },
+    'firstdancedata':{
+        'en':'First dance of the couple and opening of the dance floor',
+        'pl':'Strój',
+    },
+    'photobooth':{
+        'en':'Photo Booth ',
+        'pl':'Strój',
+    },
+    'photoboothdata':{
+        'en':'Photo booth (4 hours) and Guest Book corner',
+        'pl':'Strój',
+    },
+    'surprise':{
+        'en':'Surprise',
+        'pl':'Strój',
+    },
+    'surprisedata':{
+        'en':'Guess you have to be around to find out!',
+        'pl':'Strój',
+    },
+    'dinner':{
+        'en':'Dinner',
+        'pl':'Strój',
+    },
+    'dinnerdata':{
+        'en':'Starter, Soup, Main Course, Desert',
+        'pl':'Strój',
+    },
+    'buffet':{
+        'en':'Buffet and Drinks ',
+        'pl':'Strój',
+    },
+    'buffetdata':{
+        'en':'Food (Cold buffet, Sweet buffet) Drinks',
+        'pl':'Strój',
+    },
+    'cake':{
+        'en':'Wedding Cake',
+        'pl':'Strój',
+    },
+    'cakedata':{
+        'en':'Cutting the wedding cake',
+        'pl':'Strój',
+    },
+    'warmdish':{
+        'en':'Warm Dish',
+        'pl':'Strój',
+    },
+    'warmdishdata':{
+        'en':'Separate warm dish on top of the buffet to keep you going',
+        'pl':'Strój',
+    },
+    'warmdish2':{
+        'en':'Second Warm Dish',
+        'pl':'Strój',
+    },
+    'warmdish2data':{
+        'en':'Another warm dish on top of the buffet to keep you going',
+        'pl':'Strój',
+    },
+    'finish':{
+        'en':'Finish',
+        'pl':'Strój',
+    },
+    'finishdata':{
+        'en':'End of the Night',
         'pl':'Strój',
     },
     'formalwear':{
