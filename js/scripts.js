@@ -281,11 +281,11 @@ var dictionary = {
         'pl': 'MIEJSCE WYDARZENIA',
     },
     'savethedate': {
-        'en': 'Save the Dates',
+        'en': 'Save the Date',
         'pl': 'ZAPISZ DATĘ',
     },
     'savethedatetext': {
-        'en': 'How We MetIt is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
+        'en': 'It is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
         'pl': 'Ceremonia odbędzie się 21<sup>st</sup> Sierpnia \'21 i będzie nam miło jeżeli dołączycie do nas.',
     },
     'storycontent': {
