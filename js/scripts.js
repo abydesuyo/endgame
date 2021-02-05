@@ -427,6 +427,11 @@ var dictionary = {
 };
 
 window.change_lang = function(current_lang) {
+    $('#bgndVideo').load(location.href+' #bgndVideo>*','');
+    document.getElementById('maincontents').style.display = 'block';
+    document.getElementById('languagepicker').style.display = 'none';
+    document.documentElement.setAttribute('lang', current_lang);
+    $('.player').YTPlayer();
     translate(current_lang);
 }
 
