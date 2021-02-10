@@ -314,94 +314,98 @@ var dictionary = {
     },
     'disclaimer':{
         'en':'Please arrive on time, stay as long as you please. You are not obligated to stay all night.',
-        'pl':'Strój',
+        'pl':'Prosimy o przybycie na czas. Poniżej znajdziecie plan wydarzenia.',
     },
     'ceremony':{
         'en':'Ceremony',
-        'pl':'Strój',
+        'pl':'Ceremonia',
     },
     'ceremonydata':{
         'en':'Exchange of vows and rings',
-        'pl':'Strój',
+        'pl':'wymiana przysięg i obrączek',
     },
     'wishes':{
         'en':'Wedding Wishes',
-        'pl':'Strój',
+        'pl':'Życzenia',
     },
     'wishesdata':{
         'en':'Wishes to the Couple, glass of a sparkling wine',
-        'pl':'Strój',
+        'pl':'Życzenia dla pary młodej, toast winem musującym',
     },
     'firstdance':{
         'en':'First Dance',
-        'pl':'Strój',
+        'pl':'Pierwszy taniec',
     },
     'firstdancedata':{
         'en':'First dance of the couple and opening of the dance floor',
-        'pl':'Strój',
+        'pl':'Pierwszy taniec pary młodej otwierający szaleństwa na parkiecie',
     },
     'photobooth':{
         'en':'Photo Booth ',
-        'pl':'Strój',
+        'pl':'Fotobudka',
     },
     'photoboothdata':{
         'en':'Photo booth (4 hours) and Guest Book corner',
-        'pl':'Strój',
+        'pl':'Fotobudka będzie dostępna przez 4 godziny, prosimy o wpis do księgi gości!',
     },
     'surprise':{
         'en':'Surprise',
-        'pl':'Strój',
+        'pl':'Niespodzianka',
     },
     'surprisedata':{
         'en':'Guess you have to be around to find out!',
-        'pl':'Strój',
+        'pl':'Żeby sie dowiedzieć co jest niespodzianką, trzeba zostać do północy :)',
     },
     'dinner':{
         'en':'Dinner',
-        'pl':'Strój',
+        'pl':'Obiad',
     },
     'dinnerdata':{
         'en':'Starter, Soup, Main Course, Desert',
-        'pl':'Strój',
+        'pl':'Przystawka, zupa, danie główne, deser',
     },
     'buffet':{
         'en':'Buffet and Drinks ',
-        'pl':'Strój',
+        'pl':'Bufet i napoje',
     },
     'buffetdata':{
         'en':'Food (Cold buffet, Sweet buffet) Drinks',
-        'pl':'Strój',
+        'pl':'Zimna płyta, słodki stół, napoje wysokoowe i bezalkoholowe',
     },
     'cake':{
         'en':'Wedding Cake',
-        'pl':'Strój',
+        'pl':'Tort weselny',
     },
     'cakedata':{
         'en':'Cutting the wedding cake',
-        'pl':'Strój',
+        'pl':'Krojenie tortu weselnego',
     },
     'warmdish':{
         'en':'Warm Dish',
-        'pl':'Strój',
+        'pl':'Ciepły posiłek',
     },
     'warmdishdata':{
         'en':'Separate warm dish on top of the buffet to keep you going',
-        'pl':'Strój',
+        'pl':'Zastrzyk energi by dalej tańczyć',
     },
     'warmdish2':{
         'en':'Second Warm Dish',
-        'pl':'Strój',
+        'pl':'Drugi ciepły posiłek ',
     },
     'warmdish2data':{
         'en':'Another warm dish on top of the buffet to keep you going',
-        'pl':'Strój',
+        'pl':'Doładowanie energii dla najbardziej wytrwałych',
     },
     'finish':{
         'en':'Finish',
-        'pl':'Strój',
+        'pl':'Zakończenie',
     },
     'finishdata':{
         'en':'End of the Night',
+        'pl':'Zakończenie imprezy',
+    },
+    'dresscode':{
+        'en':'Dress Code',
         'pl':'Strój',
     },
     'formalwear':{
@@ -412,7 +416,7 @@ var dictionary = {
         'en':'Comfortable Western Wear',
         'pl':'Wygodny Strój',
     },
-    'ladiesformaldesc':{
+    'formaldesc':{
         'en':'Please avoid wearing white (bride color) or black (funeral color). You can wear what makes you feel fabulous but yet comfortable',
         'pl':'Załóż to co sprawia, że ​​czujesz się jak gwiazda.',
     },
