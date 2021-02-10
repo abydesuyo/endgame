@@ -417,7 +417,7 @@ var dictionary = {
         'pl':'Wygodny Strój',
     },
     'formaldesc':{
-        'en':'Please avoid wearing white (bride color) or black (funeral color). You can wear what makes you feel fabulous but yet comfortable',
+        'en':'You can wear what makes you feel fabulous but yet comfortable. Please avoid wearing white (bride color) or black (funeral color). Ladies can wear what is fashioable and Gentlemen can adorn thier Summer Suits. (If it is a sweltering summer, a spare shirt to change into would be handy).',
         'pl':'Załóż to co sprawia, że ​​czujesz się jak gwiazda.',
     },
     'ladiesformal':{
@@ -437,7 +437,7 @@ var dictionary = {
         'pl':'Jeśli jest upalne lato, warto pomyśleć o zapasowej koszuli.',
     },
     'semiformalweardesc':{
-        'en':'You can optionally change into semi-formal look that is contemporary & fashionable as long as you do not steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it. Dancing is on the agenda, so comfortable shoes will be a great. Polish women will often bring flats and change them in the middle of the part You can see some pins for',
+        'en':'You can optionally change into semi-formal look that is contemporary & fashionable as long as you do not steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it. Dancing is on the agenda, so comfortable shoes will be a great. Polish women will often bring flats and change them in the middle of the night.<br> You can see some pins for ',
         'pl':'Pamiętaj, że będzie mnóstwo pysznego jedzenia, więc zaplanuj dla niego trochę miejsca. Pamietaj też żeby Twoje buty były wygodne i pozwoliły na tańce przez całą noc.',
     },
     'ladies':{
