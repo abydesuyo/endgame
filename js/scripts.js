@@ -185,20 +185,20 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Alicja's and Aby's Polish Wedding",
+            title: "Alicja's and Aby's Wedding Reception",
 
             // Event start date
-            start: new Date('Aug 21, 2021 15:00'),
+            start: new Date('Oct 16, 2022 18:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Aug 22, 2021 05:00'),
+            end: new Date('Oct 16, 2022 21:00'),
 
             // Event Address
-            address: '28 Lipca 1943 17 a, 30-227 Kraków, Poland',
+            address: '6 Chome-2-31 Toyosu, Koto City, Tokyo',
 
             // Event Description
             description: "Feel free to reach out to us (absi.alinka@gmail.com) in case you have face need any help or face other challenges around logistics :)"
@@ -285,16 +285,16 @@ var dictionary = {
         'pl': 'ZAPISZ DATĘ',
     },
     'savethedatetext': {
-        'en': 'It is the 21<sup>st</sup> of August \'21 and we would like you to be a part of our joyful moment.',
-        'pl': 'Ceremonia odbędzie się 21<sup>st</sup> Sierpnia \'21 i będzie nam miło jeżeli dołączycie do nas.',
+        'en': 'It is the 16<sup>th</sup> of October \'22 and we would like you to be a part of our joyful moment.',
+        'pl': 'Ceremonia odbędzie się 16<sup>th</sup> Październik \'22 i będzie nam miło jeżeli dołączycie do nas.',
     },
     'storycontent': {
-        'en': 'On that fateful night, thanks to a terrible date movie (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
+        'en': 'On that fateful night, thanks to a terrible movie date (Dunkirk), we found each other instead ;o) The movie went about in detail about horrible ways in which soldiers could get killed. And it was looking very hopeless, and then, she turned on the charm machine aka lollipop. Best thing that ever happened to me that year ;o) That very moment, somehow we knew we were bound together. The next 3 years flew by! There was a lot of fun in the begining, and then we tested our relationship quite some. We even did the cursed Alex Zushi beach trip, and yet we did not come undone ;o) There were a lot more tests that followed along with all the happiness, but in the end the happiness prevailed ;o) And once we covered the final frontier of Polish and Indian home trips, we knew we could survive. And better yet, we started bringing out the best in each other. And so here we are :)',
         'pl': 'Tamtego wiczoru spotkaliśmy się żeby iść do kina na Dunkierkę. Aby się spóźniał więc ja odobrałam bilety, czym zaimponowałam mu po raz pierwszy. Może nie miał za wysokich wymagań. Ja chyba też nie, po powiedziałam mu, że jak nie będzie na czas to zaprosze jakiegoś przechodnia. Kiedy już zaczął sie seans, byliśmy trochę w szoku. Film pokazywał coraz to bardziej wyrafinowane sposoby, w jakie gineli żołnierze. Oboje zastanawialiśmy się kto wybrał taki film i wyglądało to wszystko nie najlepiej. Potem ja wiciągnełam lizaki. Aby twierdzi, że to najlepsza rzecz, jaka mu się przydarzyła w tamtym roku. W tym momencie w jakiś sposób wiedzieliśmy, że będziemy razem. Mijały kolejne lata. Na początku było dużo radości i zabawy, pojechaliśmy na narty i w tropiki. Potem trochę przetestowaliśmy nasz związek kłucąc się o brudne skarpetki i inne równie ważne sprawy. W międzyczasie byliśmy zarówno w Polsce jak i w Indiach, poznaliśmy rodziny i przyjacioł. Przetrwaliśmy nie tylko rok kiszenia sie razem w domu ale i przez 7 dni w środku lata zrobiliśmy 400km na rowerach. Wiemy już, że damy radę :)',
     },
     'eventdate':{
-        'en':'21st August',
-        'pl':'21 sierpnia',
+        'en':'16th October',
+        'pl':'16th Październik',
     },
     'reception':{
         'en':'Wedding Reception ',
@@ -313,24 +313,24 @@ var dictionary = {
         'pl':'TAŃCZ CAŁĄ NOC ',
     },
     'disclaimer':{
-        'en':'Please arrive on time, stay as long as you please. You are not obligated to stay all night.',
-        'pl':'Prosimy o przybycie na czas. Poniżej znajdziecie plan wydarzenia.',
+        'en':'Please arrive on time, the place is only available until 21:30. If you stay too late, you will end up helping to clean the place :)',
+        'pl':'Prosimy o punktualne przybycie, miejsce jest dostępne tylko do 21:30. Jeśli zostaniesz za późno, w końcu pomożesz w sprzątaniu tego miejsca :)',
     },
     'ceremony':{
         'en':'Ceremony',
         'pl':'Ceremonia',
     },
     'ceremonydata':{
-        'en':'Exchange of vows and rings',
-        'pl':'wymiana przysięg i obrączek',
+        'en':'Exchange of rings officiated by Padre Taro',
+        'pl':'Wymiana pierścieni prowadzona przez Ojca Taro',
     },
     'wishes':{
-        'en':'Wedding Wishes',
-        'pl':'Życzenia',
+        'en':'Toast to the Couple',
+        'pl':'Toast za parę',
     },
     'wishesdata':{
-        'en':'Wishes to the Couple, glass of a sparkling wine',
-        'pl':'Życzenia dla pary młodej, toast winem musującym',
+        'en':'Wishes to the Couple, glass of your favorute drink from the table',
+        'pl':'Życzenia Pary, kieliszek ulubionego drinka ze stołu',
     },
     'firstdance':{
         'en':'First Dance',
@@ -340,13 +340,13 @@ var dictionary = {
         'en':'First dance of the couple and opening of the dance floor',
         'pl':'Pierwszy taniec pary młodej otwierający szaleństwa na parkiecie',
     },
-    'photobooth':{
-        'en':'Photo Booth ',
-        'pl':'Fotobudka',
+    'guestbook':{
+        'en':'Guest Book',
+        'pl':'Księga Gości',
     },
-    'photoboothdata':{
-        'en':'Photo booth (4 hours) and Guest Book corner',
-        'pl':'Fotobudka będzie dostępna przez 4 godziny, prosimy o wpis do księgi gości!',
+    'guestbookdata':{
+        'en':'Please feel free to take a Gusetbook snap using the INSTAX and write a message for us in the Guestbook.',
+        'pl':'Zachęcamy do zrobienia przystawki do Księgi Gości za pomocą INSTAX i napisania do nas wiadomości w Księdze Gości.',
     },
     'surprise':{
         'en':'Surprise',
@@ -373,12 +373,12 @@ var dictionary = {
         'pl':'Zimna płyta, słodki stół, napoje wysokoowe i bezalkoholowe',
     },
     'cake':{
-        'en':'Wedding Cake',
-        'pl':'Tort weselny',
+        'en':'Party Cake',
+        'pl':'Ciasto na Imprezę',
     },
     'cakedata':{
-        'en':'Cutting the wedding cake',
-        'pl':'Krojenie tortu weselnego',
+        'en':'Cutting the Party cake',
+        'pl':'Krojenie tortu imprezowego',
     },
     'warmdish':{
         'en':'Warm Dish',
@@ -413,8 +413,8 @@ var dictionary = {
         'pl':'Strój formalny',
     },
     'semiformalwear':{
-        'en':'Comfortable Western Wear',
-        'pl':'Wygodny Strój',
+        'en':'Comfortable Wear',
+        'pl':'Wygodne noszenie',
     },
     'formaldesc':{
         'en':'You can wear what makes you feel fabulous but yet comfortable. Please avoid wearing white (bride color) or black (funeral color). Ladies can wear what is fashioable and Gentlemen can adorn thier Summer Suits. (If it is a sweltering summer, a spare shirt to change into would be handy).',
@@ -437,8 +437,8 @@ var dictionary = {
         'pl':'Jeśli jest upalne lato, warto pomyśleć o zapasowej koszuli.',
     },
     'semiformalweardesc':{
-        'en':'You can optionally change into semi-formal look that is contemporary & fashionable as long as you do not steal the thunder of the night ;) Keep in mind that there will be plenty of delicious food, so plan some space for it. Dancing is on the agenda, so comfortable shoes will be a great. Polish women will often bring flats and change them in the middle of the night.<br> You can see some pins for ',
-        'pl':'Pamiętaj, że będzie mnóstwo pysznego jedzenia, więc zaplanuj dla niego trochę miejsca. Pamietaj też żeby Twoje buty były wygodne i pozwoliły na tańce przez całą noc.',
+        'en':'You can wear anything that is contemporary & fashionable that you feel comforatble in, as long as you do not steal the thunder of the night ;)',
+        'pl':'Możesz nosić wszystko, co jest współczesne i modne, w czym czujesz się komfortowo, o ile nie kradniesz nocnych grzmotów ;)',
     },
     'ladies':{
         'en':'Ladies',
@@ -449,8 +449,8 @@ var dictionary = {
         'pl':'Panów',
     },
     'citydesc':{
-        'en':'City of Castles',
-        'pl':'Królewskie miasto Kraków',
+        'en':'City of Iconic Landmarks',
+        'pl':'Miasto kultowych zabytków',
     },
     'directions':{
         'en':'How do I get there?',
@@ -477,8 +477,8 @@ var dictionary = {
         'pl':'Cieszymy się, że dołączysz do nas w tym ważnym dniu.',
     },
     'rsvpmessage':{
-        'en':'We would greatly appreciate if you could RSVP before 21st of May \'1. But, we do understand that things could change due to the ongoing pandemic. (Also please ensure to check in on your VISA requirements)',
-        'pl':'Prosimy o potwierdzenie przybycia przed 1 maja \'21. Rozumiemy jednak, że sytuacja może się zmienić z powodu trwającej pandemii i nie tylko.',
+        'en':'We would greatly appreciate if you could RSVP before 1st of October \'22.',
+        'pl':'Bylibyśmy bardzo wdzięczni za RSVP przed 1 października \'22.',
     },
     'youremail':{
         'en':'Your email',
@@ -542,7 +542,7 @@ function translate(current_lang) {
 
 // Google map
 function initMap() {
-    var location = {lat: 50.063436, lng: 19.871454};
+    var location = {lat: 35.64722559300683, lng: 139.79230138650695};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
