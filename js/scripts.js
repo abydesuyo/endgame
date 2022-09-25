@@ -369,16 +369,16 @@ var dictionary = {
         'pl':'Bufet i napoje',
     },
     'buffetdata':{
-        'en':'Food (Cold buffet, Sweet buffet) Drinks',
-        'pl':'Zimna płyta, słodki stół, napoje wysokoowe i bezalkoholowe',
+        'en':'Food (Buffet, Sweets, Snacks) and Drinks',
+        'pl':'Jedzenie (bufet, słodycze, przekąski) i napoje',
     },
     'cake':{
-        'en':'Party Cake',
-        'pl':'Ciasto na Imprezę',
+        'en':'Cake Cutting',
+        'pl':'Cięcie ciasta',
     },
     'cakedata':{
-        'en':'Cutting the Party cake',
-        'pl':'Krojenie tortu imprezowego',
+        'en':'Cake Cutting Ceremony',
+        'pl':'Ceremonia Krojenia Ciasta',
     },
     'warmdish':{
         'en':'Warm Dish',
@@ -556,7 +556,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 50.063436, lng: 19.871454};
+    var la_fiesta = {lat: 35.64722559300683, lng: 139.79230138650695}
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
