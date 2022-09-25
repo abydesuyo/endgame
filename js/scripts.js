@@ -185,7 +185,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Alicja's and Aby's Wedding Reception",
+            title: "Alicja's and Aby's Party",
 
             // Event start date
             start: new Date('Oct 16, 2022 18:00'),
