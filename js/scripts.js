@@ -237,7 +237,8 @@ $(document).ready(function () {
             {
             $('#alert-wrapper').html(alert_markup('danger', rsvp_mesg_dict['badinvitecode'][current_lang]));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyYbKvXmV1KSqEIWw3Tj9swjdj_MObNNX618qH9cshuSrZhQnLidM22/exec', data)
+            // $.post('https://script.google.com/macros/s/AKfycbyYbKvXmV1KSqEIWw3Tj9swjdj_MObNNX618qH9cshuSrZhQnLidM22/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxG1DXTJQUF_ZGfzUrNC9exseliscxxKb53-6ZRoDxaN7nR34QeT5fbN42-up9UyTwn/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
