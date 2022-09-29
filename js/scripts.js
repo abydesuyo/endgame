@@ -322,15 +322,15 @@ var dictionary = {
         'pl':'Ceremonia',
     },
     'ceremonydata':{
-        'en':'Exchange of rings officiated by Padre Taro',
-        'pl':'Wymiana pierścieni prowadzona przez Ojca Taro',
+        'en':'Exchange of rings',
+        'pl':'Wymiana pierścieni',
     },
     'wishes':{
         'en':'Toast to the Couple',
         'pl':'Toast za parę',
     },
     'wishesdata':{
-        'en':'Wishes to the Couple, glass of your favorute drink from the table',
+        'en':'Wishes to the Couple, glass of your favourite drink',
         'pl':'Życzenia Pary, kieliszek ulubionego drinka ze stołu',
     },
     'firstdance':{
@@ -346,7 +346,7 @@ var dictionary = {
         'pl':'Księga Gości',
     },
     'guestbookdata':{
-        'en':'Please feel free to take a Gusetbook snap using the INSTAX and write a message for us in the Guestbook.',
+        'en':'Please feel free to take a Guestbook snap using the INSTAX and write a message for us in the Guestbook.',
         'pl':'Zachęcamy do zrobienia przystawki do Księgi Gości za pomocą INSTAX i napisania do nas wiadomości w Księdze Gości.',
     },
     'surprise':{
